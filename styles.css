@@ -1,0 +1,223 @@
+/* General Styles */
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: #f8f9fa;
+}
+
+section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+}
+
+/* Hero Section Overlay */
+.bg-dark.position-relative::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(20, 40, 50, 0.7);
+  z-index: 1;
+}
+.bg-dark.position-relative > .container {
+  position: relative;
+  z-index: 2;
+}
+
+/* Hero Section */
+#hero h1 {
+  font-size: 4rem;
+  letter-spacing: 2px;
+}
+
+/* Navbar */
+.navbar-brand {
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+}
+
+.navbar .btn-success {
+  border-radius: 25px;
+  padding: 0.5rem 2rem;
+}
+
+/* About Section */
+#about img {
+  border-radius: 12px;
+}
+
+/* Services */
+.card {
+  border: none;
+  border-radius: 16px;
+  transition: box-shadow 0.2s;
+}
+.card:hover {
+  box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+}
+
+.card .bi {
+  font-size: 2.5rem;
+}
+
+/* Skills */
+.progress {
+  height: 8px;
+  border-radius: 8px;
+  background: #e9ecef;
+}
+.progress-bar {
+  border-radius: 8px;
+}
+
+/* Extra Services/Stats */
+.bg-light .bi {
+  font-size: 2rem;
+}
+
+/* Portfolio Gallery */
+#portfolio img {
+  object-fit: cover;
+  width: 100%;
+  height: 140px;
+  border-radius: 12px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+#portfolio img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+}
+
+/* Footer Logos */
+footer img {
+  opacity: 0.85;
+  transition: opacity 0.2s;
+}
+footer img:hover {
+  opacity: 1;
+}
+
+/* Responsive Tweaks */
+@media (max-width: 767px) {
+  .navbar .btn-success {
+    margin-top: 1rem;
+    width: 100%;
+  }
+  #portfolio img {
+    height: 100px;
+  }
+  section {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+/* Portfolio Gallery Customization */
+.portfolio-img {
+  width: 240px;
+  max-width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.07);
+  background: #eee;
+  margin-left: 18px;
+  margin-right: 18px;
+  display: block;
+}
+@media (max-width: 991px) {
+  .portfolio-img {
+    width: 100%;
+    height: 140px;
+  }
+}
+
+/* Logo Bar Customization */
+section[style*='background: #4b8a74'] {
+  padding-top: 40px !important;
+  padding-bottom: 40px !important;
+}
+section[style*='background: #4b8a74'] img {
+  opacity: 0.95;
+  transition: opacity 0.2s;
+}
+section[style*='background: #4b8a74'] img:hover {
+  opacity: 1;
+}
+
+/* Footer Customization */
+.footer-main {
+  background: #0d232a !important;
+}
+.footer-main h4 {
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.footer-main .footer-bottom {
+  background: #0a1a1f !important;
+  margin-top: 0;
+}
+.footer-main .btn-success.rounded-circle {
+  width: 48px;
+  height: 48px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+  margin-left: 10px;
+}
+.footer-main .btn-success.rounded-circle i {
+  vertical-align: middle;
+}
+.footer-main .text-white-50 {
+  font-size: 1.3rem;
+}
+
+.footer-main .row > .col-12 {
+  margin-bottom: 0.5rem;
+}
+
+@media (max-width: 767px) {
+  .portfolio-img {
+    width: 100%;
+    height: 100px;
+  }
+  .footer-main h4 {
+    font-size: 1.2rem;
+  }
+  .footer-main .footer-bottom {
+    font-size: 0.95rem;
+  }
+}
+
+.outlined-text {
+  font-size: 4.5rem;
+  font-weight: 800;
+  color: transparent;
+  -webkit-text-stroke: 2px #fff;
+  letter-spacing: 0.08em;
+}
+
+.portfolio-row-gap {
+  margin-bottom: 48px !important;
+}
+
+.about-divider {
+  border: none;
+  border-top: 1.5px solid #bdbdbd;
+  margin: 1.5rem 0 2rem 0;
+}
+
+.btn-light-green {
+  background-color: #28bf3c !important;
+  color: #fff !important;
+  border: none !important;
+}
+.btn-light-green:hover,
+.btn-light-green:focus {
+  background-color: #229e32 !important;
+  color: #fff !important;
+} 
